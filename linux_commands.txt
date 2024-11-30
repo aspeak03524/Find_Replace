@@ -1,0 +1,21 @@
+vboxuser@Ubuntu2 ~ % echo "Devops is the future" > file1.txt
+vboxuser@Ubuntu2 ~ % echo "Learning Devops is epic" > file2.txt
+vboxuser@Ubuntu2 ~ % echo "Devops job market is booming" > file3.txt
+vboxuser@Ubuntu2 ~ % ls
+ andrew_new_projects   file1.txt       Grep_Scripts		     'new file'         Templates     vim
+ Desktop	       file2.txt       index.html		      Pictures	        TEST	      workspace
+ DIRECTORY	       file3.txt       Linux_Shell_Scripts_1	      Public	        TESTFILE
+ Documents	       git_flow        modified_files_backup.tar.gz   shared_file.txt   testtwo.txt
+ Downloads	       Grep_Practice   Music			      snap	        Videos
+vboxuser@Ubuntu2 ~ % grep -l "Devops" *.txt
+file1.txt
+file2.txt
+file3.txt
+vboxuser@Ubuntu2 ~ % sed -i 's/Devops/Cloudops/g' *.txt
+vboxuser@Ubuntu2 ~ % grep "Cloudops" *.txt
+file1.txt:Cloudops is the future
+file2.txt:Learning Cloudops is epic
+file3.txt:Cloudops job market is booming
+vboxuser@Ubuntu2 ~ % mkdir Find_Replace
+vboxuser@Ubuntu2 ~ % mv file2.txt file1.txt file3.txt Find_Replace
+vboxuser@Ubuntu2 ~ % cd Find_Replace
